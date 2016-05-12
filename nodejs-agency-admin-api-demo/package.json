@@ -1,0 +1,10 @@
+{
+  "name": "nodejs-agency-admin-api-demo",
+  "version": "1.0.0",
+  "description": "How to call the Four Walls API using nodejs",
+  "main": "demo.js",
+  "dependencies": {
+    "node-rest-client": "^1.8.0",
+    "request": "^2.72.0"
+  }
+}
