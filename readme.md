@@ -55,6 +55,8 @@ GET Parameters:
 PageSize=<int> // defaults to 100
 CurrentPage=<int> // defaults to 1. Paging starts at 1
 ListingStatus[]=<ListingStatus> // optional filter. 
+ModifiedUtcIsoDateTimeFrom=<ISOUTCDateTime> // optional filter.
+
 ```
 ListingStatus options
 ```
@@ -73,6 +75,11 @@ Example GET requests
 Return only Properties/Listings with a ```ListingStatus``` of ```Appraisal```, ```Sold``` or ```PendingListing```
 ```
 /api/v1/agency/listings/agency?ListingStatus[]=Appraisal&ListingStatus[]=Sold&ListingStatus[]=PendingListing
+```
+
+Return a max of 50 properties after a given date
+```
+/api/v1/agency/listings/agency?ModifiedUtcIsoDateTimeFrom=2016-11-15T00:00:00Z&PageSize=500
 ```
 
 
